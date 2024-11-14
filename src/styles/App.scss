@@ -1,0 +1,71 @@
+$transparent: rgba(0, 0, 0, 0);
+
+.App {
+  text-align: center;
+}
+
+.dark-mode {
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.dark-btn {
+  border-radius: 5px;
+  border: solid 1px white;
+  padding: 11px;
+  color: white;
+  position: fixed;
+  margin-left: 90vh;
+  margin-top: 90vh;
+  font-size: 1.2em;
+  width: 45px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.white-text {
+  color: white;
+}
+
+footer {
+  height: 550px;
+  background-image: url("../assets/cloudy_footer.svg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.lined-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.lined-title::before,
+.lined-title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid white;
+  margin: 0 10px;
+  flex: 0 0 25%;
+}
+
+.d-none {
+  display: none;
+}
+
+.upSlide {
+  position: fixed;
+  margin-left: 90vh;
+  margin-top: 90vh;
+  background-color: $transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+}

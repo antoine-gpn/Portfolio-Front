@@ -1,0 +1,52 @@
+.bloc-profil {
+  width: 60%;
+
+  p {
+    text-align: left;
+  }
+}
+
+.picture {
+  width: 280px;
+  border-radius: 200px;
+}
+
+.auto-profil {
+  width: 90%;
+  margin: auto;
+}
+
+#quiSuisJe {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .picture {
+    width: 230px;
+  }
+}
+
+@media (max-width: 800px) {
+  .auto-profil {
+    width: 100%;
+  }
+  .bloc-profil {
+    margin: auto;
+    width: 65%;
+  }
+
+  .picture {
+    width: 300px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}

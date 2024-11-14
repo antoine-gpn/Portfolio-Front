@@ -1,0 +1,83 @@
+.project {
+  width: 27%;
+  margin-bottom: 0;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.project-img {
+  border-radius: 15px;
+  width: 35vh;
+  height: 23vh;
+  margin-top: 25px;
+  border: solid 2px rgba(158, 157, 245, 0.801);
+}
+
+.overlay {
+  border-radius: 15px;
+  width: 36vh;
+  height: 23.5vh;
+  margin: auto;
+  position: absolute;
+  top: 19px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.technos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.techno {
+  background-color: #1e278b;
+  border-radius: 5px;
+  padding: 4px 5px 4px 5px;
+  font-size: 1em;
+  margin-right: 10px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  .project {
+    padding-bottom: 20px;
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .project {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+}

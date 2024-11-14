@@ -1,0 +1,31 @@
+.experience-bloc {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  border: solid 1px #263b5a;
+  border-radius: 20px;
+  margin-top: 20px;
+
+  p {
+    margin-top: 0;
+  }
+
+  img {
+    width: 90%;
+    border-radius: 50px;
+  }
+}
+
+.exp-img-bloc {
+  width: 30%;
+  margin: auto;
+}
+
+.experience-text-bloc {
+  width: 60%;
+  margin: auto;
+}
+
+.experience-paragraph {
+  text-align: left;
+}

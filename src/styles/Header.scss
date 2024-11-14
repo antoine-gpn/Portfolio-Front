@@ -1,0 +1,69 @@
+$transparent: rgba(0, 0, 0, 0);
+
+.App-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100vh;
+  background-image: url("../assets/cloudy.svg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.button-down {
+  margin-top: 100px;
+  padding: 6px 8px 6px 8px;
+  background-color: $transparent;
+  border: solid 2px white;
+  border-radius: 50px;
+  color: white;
+  font-size: 1em;
+
+  a {
+    color: white;
+  }
+}
+
+.header-text {
+  height: 650px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.fullstack {
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+.name {
+  font-size: 2.5em;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+nav p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+}

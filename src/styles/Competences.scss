@@ -1,0 +1,140 @@
+$transparent: rgba(0, 0, 0, 0);
+
+.competences {
+  padding-top: 20px;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+.competences-block {
+  display: flex;
+}
+
+.competences-left {
+  margin-top: 100px;
+  width: 50%;
+}
+
+.techno-bloc {
+  background-color: $transparent;
+  border: solid 2px #1b88c1;
+  width: 70%;
+  border-radius: 10px;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.techno-titles {
+  color: white;
+  margin: 5px;
+}
+
+.techno-line {
+  margin-top: 15px;
+  font-size: 3.4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.techno-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cv-bloc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-div {
+  position: relative;
+  display: inline-block;
+}
+
+.cv-image {
+  width: 500px;
+  border: solid 2px white;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.zoom-loupe {
+  pointer-events: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-image: url("../assets/CV.jpg");
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background-size: 420%;
+  position: absolute;
+}
+
+.btn-download {
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: $transparent;
+  color: white;
+  border: solid 1px white;
+  border-radius: 12px;
+  padding: 16px 50px 16px 50px;
+}
+
+.spring-img {
+  width: 54px;
+  pointer-events: none;
+}
+
+@media (max-width: 1400px) {
+  .techno-line {
+    font-size: 2.8em;
+  }
+
+  .spring-img {
+    width: 41px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .techno-name {
+    font-size: 14px;
+  }
+
+  .cv-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .techno-bloc {
+    width: 85%;
+  }
+
+  .zoom-loupe {
+    display: none;
+  }
+
+  .competences-block {
+    flex-direction: column;
+  }
+
+  .competences-left {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cv-bloc {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+  }
+
+  .cv-image {
+    width: 80%;
+  }
+}

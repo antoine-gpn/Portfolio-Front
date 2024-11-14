@@ -1,0 +1,18 @@
+#projets {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .project-list {
+    flex-direction: column;
+  }
+}
