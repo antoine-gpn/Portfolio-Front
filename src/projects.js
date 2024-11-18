@@ -5,6 +5,7 @@ import annexeGoweb from "./assets/goweb-maquettes.png";
 import dataflow from "./assets/dataflow.jpg";
 import snakeGif from "./assets/snake.gif";
 import excel from "./assets/excel.png";
+import linguacards from "./assets/linguacards.jpg";
 
 const projects = [
   {
@@ -75,6 +76,14 @@ Une fois la technologie trouvée, il me fallait une idée de projet. J’ai rapi
 J’ai d’abord créé une interface composée d’un damier de 10x10 cases et codé les fonctions permettant de générer le serpent et la pomme. Il a ensuite fallu coder les déplacements et l'agrandissement du serpent, l’apparition aléatoire de la pomme à chaque contact avec le serpent et l’implémentation du Game Over. Sans rentrer dans les détails, les positions du corps du serpent sont représentées sous forme de tableau de tuples (x, y) indiquant la position de chaque carré composant le serpent au format abscisse/ordonnée : [ (1 , 1) , (1 , 2) ... ]
 `,
     annexes: [snakeGif],
+  },
+  {
+    tag: "linguacards",
+    name: "LinguaCards (A venir)",
+    technos: ["Java Spring", "AngularJS"],
+    image: linguacards,
+    links: [,],
+    description: `Site web d'apprentissage des langues à travers un système de cartes de vocabulaire recto-verso`,
   },
 ];
 
