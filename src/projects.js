@@ -80,10 +80,19 @@ J’ai d’abord créé une interface composée d’un damier de 10x10 cases et 
   {
     tag: "linguacards",
     name: "LinguaCards (A venir)",
-    technos: ["Java Spring", "AngularJS"],
+    technos: ["Java Spring", "AngularJS", "MongoDB"],
     image: linguacards,
     links: [,],
-    description: `Site web d'apprentissage des langues à travers un système de cartes de vocabulaire recto-verso`,
+    description: `Le projet LinguaCards est né de la volonté de trouver la solution la plus optimale et ludique possible pour apprendre une langue (dans mon cas personnel, l’objectif était de peaufiner mon niveau en anglais). Pour cela, j’ai décidé de m’appuyer sur un système d’apprentissage nommé SRS (Spaced Repetition System). Ce système a pour but de répéter la mémorisation d’un concept (en l'occurrence, il s’agit ici de mots de vocabulaire).
+
+L’idée est d’être confronté à un mot de manière régulière pour le faire passer de la mémoire à court terme vers la mémoire à long terme. Afin de rendre l’apprentissage ludique, j’ai décidé de regrouper ces mots sous la forme d’un deck de cartes recto-verso composé du mot dans la langue de l’utilisateur ainsi que sa traduction dans la langue souhaitée. Chaque carte aura alors un score non visible associé permettant de l'associer à l’une des 3 catégories : "court-terme", "moyen-terme" et "long-terme". 
+
+Le “jeu” de mémorisation s’apparentera alors à une page sur laquelle figure le deck dont la première carte sera retournée. L’utilisateur devra deviner la traduction du mot affiché et devra swipe à gauche ou à droite en fonction de s’il a pu trouver la bonne réponse ou non. Cette action affecte le score de la carte concernée, définissant ainsi le temps nécessaire avant que la carte se présentera à nouveau à l’utilisateur.
+
+De plus, dans un but de rendre l'appliciation ludique, une image illustera chaque carte. Celle-ci sera générée via un appel vers l'API du site Freepik (une API externe générant une image via IA selon un prompt donné qui sera ici le mot de vocabulaire). De la même manière, lorsque l'utilisateur voudra ajouter une nouvelle carte, il aura simplement à saisir le mot dans l'une des deux langues, la traduction sera automatiquement proposé à l'aide d'un appel vers l'API de Google Translate.
+
+Enfin, chaque personne voulant utiliser ce service devra créer un compte en arrivant sur la plateforme. La gestion de l'utilisateur se fera via Spring Security côté Back-end et fonctionnera avec un système de Json Web Token pour gérer les accès à l'API. Le stockage des données utilisateur sera sécurisé avec un cyptage du mot de passe avant d'être stocké dans la base MongoDB.
+`,
   },
 ];
 
