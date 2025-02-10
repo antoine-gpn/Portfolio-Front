@@ -91,7 +91,7 @@ Le “jeu” de mémorisation s’apparentera alors à une page sur laquelle fig
 
 De plus, dans un but de rendre l'appliciation ludique, une image illustera chaque carte. Celle-ci sera générée via un appel vers l'API du site Freepik (une API externe générant une image via IA selon un prompt donné qui sera ici le mot de vocabulaire). De la même manière, lorsque l'utilisateur voudra ajouter une nouvelle carte, il aura simplement à saisir le mot dans l'une des deux langues, la traduction sera automatiquement proposé à l'aide d'un appel vers l'API de Google Translate.
 
-Enfin, chaque personne voulant utiliser ce service devra créer un compte en arrivant sur la plateforme. La gestion de l'utilisateur se fera via Spring Security côté Back-end et fonctionnera avec un système de Json Web Token pour gérer les accès à l'API. Le stockage des données utilisateur sera sécurisé avec un cyptage du mot de passe avant d'être stocké dans la base MongoDB.
+Enfin, chaque personne voulant utiliser ce service devra créer un compte en arrivant sur la plateforme. La gestion de l'utilisateur se fera via Spring Security côté Back-end et fonctionnera avec un système de Json Web Token pour gérer les accès à l'API. Le stockage des données utilisateur sera sécurisé avec un cryptage du mot de passe avant d'être stocké dans la base MongoDB.
 `,
   },
 ];
