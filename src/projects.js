@@ -2,10 +2,11 @@ import goweb from "./assets/goweb.png";
 import snake from "./assets/snake.png";
 import portfolio from "./assets/portfolio.png";
 import annexeGoweb from "./assets/goweb-maquettes.png";
-import dataflow from "./assets/dataflow.jpg";
+import dataflow from "./assets/dataflow.png";
 import snakeGif from "./assets/snake.gif";
 import excel from "./assets/excel.png";
 import linguacards from "./assets/linguacards.jpg";
+import hexagon from "./assets/hexagon_bank.png";
 
 const projects = [
   {
@@ -62,22 +63,6 @@ Le graphique est généré via la Library D3.js et le stockage des données via 
 `,
   },
   {
-    tag: "snake",
-    name: "Snake GUI",
-    technos: ["Python"],
-    image: snake,
-    links: [
-      { text: "Repo GitHub", url: "https://github.com/antoine-gpn/Snake" },
-    ],
-    description: `Le projet Snake a été réalisé sur mon temps libre pour me familiariser avec les interfaces graphiques utilisateur (GUI). Pour cela, j’ai décidé de m’orienter vers Python puisque de nombreuses librairies permettent de réaliser ce genre de projet avec un code de départ plutôt léger et donc facile à prendre en main. Je me suis orienté vers Tkinter, l’une des librairies graphiques les plus populaires dans la communauté Python. 
-
-Une fois la technologie trouvée, il me fallait une idée de projet. J’ai rapidement choisi le jeu Snake puisque les règles sont assez simples mais permettent d'appréhender divers paramètres challengeants d’un point de vue visuel.
-
-J’ai d’abord créé une interface composée d’un damier de 10x10 cases et codé les fonctions permettant de générer le serpent et la pomme. Il a ensuite fallu coder les déplacements et l'agrandissement du serpent, l’apparition aléatoire de la pomme à chaque contact avec le serpent et l’implémentation du Game Over. Sans rentrer dans les détails, les positions du corps du serpent sont représentées sous forme de tableau de tuples (x, y) indiquant la position de chaque carré composant le serpent au format abscisse/ordonnée : [ (1 , 1) , (1 , 2) ... ]
-`,
-    annexes: [snakeGif],
-  },
-  {
     tag: "linguacards",
     name: "LinguaCards (A venir)",
     technos: ["Java Spring", "AngularJS", "MongoDB"],
@@ -93,6 +78,36 @@ De plus, dans un but de rendre l'appliciation ludique, une image illustera chaqu
 
 Enfin, chaque personne voulant utiliser ce service devra créer un compte en arrivant sur la plateforme. La gestion de l'utilisateur se fera via Spring Security côté Back-end et fonctionnera avec un système de Json Web Token pour gérer les accès à l'API. Le stockage des données utilisateur sera sécurisé avec un cryptage du mot de passe avant d'être stocké dans la base MongoDB.
 `,
+  },
+  {
+    tag: "hexagon_bank",
+    name: "HexagonBank",
+    technos: ["Java Spring", "ReactJS", "Docker"],
+    image: hexagon,
+    links: [,],
+    description: `Le projet HexagonBank a été réalisé dans le but de me familiariser avec l'architecture hexagonale, une pratique de développement et de structuration informatique née au milieu des années 2000 et devenue très populaire ces dernières années. 
+
+Le principe est de découper un projet informatique en plusieurs composants distincts interchangeables. Dans un projet web, cela se traduit par un noyau/cœur de l'application sur lequel va se greffer les autres composants tels que l'interface graphique, l'API, la base de données...
+
+HexagonBank est donc une application web construite autour de ce principe : le noyau développé en Java, définit les caractéristiques et fonctionnalités de l'application, tandis que des composants externes (API Spring Boot, persistence SQL) branchés sur ce noyau se chargent de gérer les interactions avec la base de données (récupération & envoi de données).
+
+Enfin, le front-end réalisé avec ReactJS, permet à l'utilisateur d'interagir avec l'application via une interface web connectée à l'API. Celle-ci permet à l'utilisateur de consulter son solde bancaire aindi que les dernières transactions. Il pourra également ajouter ou retirer de l'argent selon des règles métier définies dans le noyau (ex: impossible d'effectuer un retrait si le montant de celui-ci est supérieur au solde du compte).`,
+  },
+  {
+    tag: "snake",
+    name: "Snake GUI",
+    technos: ["Python"],
+    image: snake,
+    links: [
+      { text: "Repo GitHub", url: "https://github.com/antoine-gpn/Snake" },
+    ],
+    description: `Le projet Snake a été réalisé sur mon temps libre pour me familiariser avec les interfaces graphiques utilisateur (GUI). Pour cela, j’ai décidé de m’orienter vers Python puisque de nombreuses librairies permettent de réaliser ce genre de projet avec un code de départ plutôt léger et donc facile à prendre en main. Je me suis orienté vers Tkinter, l’une des librairies graphiques les plus populaires dans la communauté Python. 
+
+Une fois la technologie trouvée, il me fallait une idée de projet. J’ai rapidement choisi le jeu Snake puisque les règles sont assez simples mais permettent d'appréhender divers paramètres challengeants d’un point de vue visuel.
+
+J’ai d’abord créé une interface composée d’un damier de 10x10 cases et codé les fonctions permettant de générer le serpent et la pomme. Il a ensuite fallu coder les déplacements et l'agrandissement du serpent, l’apparition aléatoire de la pomme à chaque contact avec le serpent et l’implémentation du Game Over. Sans rentrer dans les détails, les positions du corps du serpent sont représentées sous forme de tableau de tuples (x, y) indiquant la position de chaque carré composant le serpent au format abscisse/ordonnée : [ (1 , 1) , (1 , 2) ... ]
+`,
+    annexes: [snakeGif],
   },
 ];
 
