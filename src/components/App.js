@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 //import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 import "../styles/App.scss";
 
 import { useState, useEffect } from "react";
@@ -13,6 +14,7 @@ import Contact from "./Contact";
 function App() {
   const [showSlide, updateShowSlide] = useState(false);
   const [isDarkMode, setDarkMode] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", function () {
@@ -23,6 +25,15 @@ function App() {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (location.hash === "#projets") {
+      const element = document.getElementById("projets");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="App">

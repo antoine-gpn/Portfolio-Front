@@ -18,7 +18,7 @@ function ProjectPage() {
 
   return (
     <div>
-      <Link to="/">
+      <Link to="/#projets">
         <button className="return-btn">
           <FontAwesomeIcon icon={faArrowTurnDown} />
         </button>
