@@ -7,6 +7,7 @@ import snakeGif from "./assets/snake.gif";
 import excel from "./assets/excel.png";
 import linguacards from "./assets/linguacards.jpg";
 import hexagon from "./assets/hexagon_bank.png";
+import hexagonScreen from "./assets/hexagonbank.jpg";
 
 const projects = [
   {
@@ -54,6 +55,7 @@ Enfin, chaque personne voulant utiliser ce service devra créer un compte en arr
         url: "https://github.com/antoine-gpn/hexagon-bank",
       },
     ],
+    annexes: [hexagonScreen],
     description: `Le projet HexagonBank a été réalisé dans le but de me familiariser avec l'architecture hexagonale, une pratique de développement et de structuration informatique née au milieu des années 2000 et devenue très populaire ces dernières années. 
 
 Le principe est de découper un projet informatique en plusieurs composants distincts interchangeables. Dans un projet web, cela se traduit par un noyau/cœur de l'application sur lequel va se greffer les autres composants tels que l'interface graphique, l'API, la base de données...
