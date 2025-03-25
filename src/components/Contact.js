@@ -28,6 +28,16 @@ function Contact() {
       }
     });
     if (formValid) {
+      fetch("https://portfolio-back-db1j.onrender.com/mail/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: fields["name"],
+          mail: fields["mail"],
+          obj: fields["obj"],
+          msg: fields["msg"],
+        }),
+      });
       updateEmailSent(true);
       setError(false);
     }
